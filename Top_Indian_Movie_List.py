@@ -54,4 +54,4 @@ def scrape_top_list(url):
         movies_list.append(dict)
     return movies_list
 all_movies=scrape_top_list(URL)
-pprint(all_movies)
+# pprint(all_movies)

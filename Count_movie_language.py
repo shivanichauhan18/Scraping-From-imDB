@@ -1,11 +1,13 @@
-from movie_list_details import*
+from movie_list_details import movies_detail
+from pprint import pprint
+
 
 def get_languages(movies_list):
         languages=[]
         for movie in movies_list:
-                languages.extend(movie["Language"])
+                languages.extend(movie["Languages"])
         return languages
-language_list=get_languages(movies_details)
+language_list=get_languages(movies_detail)
 
 
 def removing_duplicate_language(language_list):

@@ -37,6 +37,8 @@ def Scrap_movie_bio_and_director(imdb):
     a_tegs=credits_div.findAll("a")
     directors=[]  
 
+
+
     for teg in a_tegs:
         director_index=teg.get_text()
         directors.append(director_index)

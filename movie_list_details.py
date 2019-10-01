@@ -9,7 +9,9 @@ def Scrap_Movie_list_detail(movies):
         for url in movies[:10]:
                 movie_url=url["url"]
                 particular_movie=Scrap_Movie_Detail(movie_url)
-                total_movies.append(particular_movie)
-        pprint(total_movies)
-movie_list_detail1=(Scrap_Movie_list_detail(all_movies)) 
-pprint(movie_list_detail1)
+                movie_detail=particular_movie.copy()
+                particular_movie.clear()
+                total_movies.append(movie_detail)
+        return total_movies
+movies_detail=Scrap_Movie_list_detail(all_movies)
+# pprint(movies_detail)

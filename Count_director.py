@@ -1,4 +1,4 @@
-from movie_list_details import movies_details
+from movie_list_details import movies_detail
 from pprint import pprint
 
 def movies_directors(movies_list):
@@ -6,7 +6,7 @@ def movies_directors(movies_list):
     for index in movies_list:
         total_dir.extend(index["director"])
     return total_dir
-total_director=movies_directors(movies_details)
+total_director=movies_directors(movies_detail)
 
 def removing_duplicate_director(dir_list):
     director=[]
@@ -25,4 +25,4 @@ def analyse_movies_directors(single_dir,total_directors):
                 count=count+1
         dictionary[main_dir]=count
     pprint (dictionary)
-pprint(analyse_movies_directors(directors,total_director))
+analyse_movies_directors(directors,total_director)

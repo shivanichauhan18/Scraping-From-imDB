@@ -21,7 +21,7 @@ def group_by_year(movies,years_list):
 
     return years
 yearsDetail=group_by_year(all_movies,years_list)
-pprint(yearsDetail)
+# pprint(yearsDetail)
 
 def data_list(sorted_list,group_of_year):
     data={}
