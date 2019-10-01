@@ -32,7 +32,7 @@ def Scrap_Movie_list_detail(movies):
             total_movie.append(reading)
         else:
             movie_detail=Scrap_Movie_Detail(url)
-            writtingFile=writting_data(fileName,movie_detail)
+            writting_data(fileName,movie_detail)
             print ("writting data")
             pprint(movie_detail)
             random_num=random.randint(1,3)
